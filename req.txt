@@ -32,13 +32,11 @@ django-wkhtmltopdf==3.4.0
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.2.2
 fontawesomefree==6.3.0
-tzdata==2022.7
 tzlocal==5.0.1
 uritemplate==4.1.1
 urllib3==1.26.14
 validators==0.22.0
 virtualenv==20.19.0
-sqlparse==0.4.3
 regex==2023.5.5
 repath==0.9.0
 requests==2.28.2
