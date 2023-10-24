@@ -1,0 +1,412 @@
+
+
+{
+    "data":
+    [
+        {
+            "question": "what is your name?",
+            "answer": "I am Genius. How can I help you,Sir?"
+          },
+
+        {
+          "question": "hi",
+          "answer": "Hello, how can I help you?"
+        },
+        {
+          "question": "hello",
+          "answer": "Hi there, what can I assist you with?"
+        },
+        {
+          "question": "hey",
+          "answer": "Hello! How may I be of service today?"
+        },
+        {
+          "question": "hi there",
+          "answer": "Hello there! How can I assist you?"
+        },
+        {
+          "question": "howdy",
+          "answer": "Howdy! What can I do for you?"
+        },
+        {
+          "question": "greetings",
+          "answer": "Greetings! How may I assist you today?"
+        },
+        {
+          "question": "yo",
+          "answer": "Yo! What can I help you with?"
+        },
+        {
+          "question": "sup",
+          "answer": "Hey, what's up? How can I assist you?"
+        },
+        {
+          "question": "what's up",
+          "answer": "Not much, what's up with you? How can I assist?"
+        },
+        {
+          "question": "good day",
+          "answer": "Good day! How can I be of service?"
+        },
+        {
+          "question": "hiya",
+          "answer": "Hiya! What can I help you with today?"
+        },
+        {
+          "question": "how's it going",
+          "answer": "It's going well. How can I assist you?"
+        },
+        {
+          "question": "hi friend",
+          "answer": "Hello, my friend! How may I assist you?"
+        },
+        {
+          "question": "hello there",
+          "answer": "Hello there! How can I assist you today?"
+        },
+        {
+          "question": "good morning",
+          "answer": "Good morning! How may I help you?"
+        },
+        {
+          "question": "good afternoon",
+          "answer": "Good afternoon! What can I assist you with?"
+        },
+        {
+          "question": "good evening",
+          "answer": "Good evening! How can I be of service?"
+        },
+        {
+          "question": "hi, how are you",
+          "answer": "Hello! I'm here to help. How are you?"
+        },
+        {
+          "question": "hey, what's new",
+          "answer": "Hey there! What's new with you? How can I assist?"
+        },
+        {
+          "question": "hi, it's been a while",
+          "answer": "Hello! It has been a while. How can I assist you today?"
+        },
+        {
+          "question": "hi, long time no see",
+          "answer": "Hello! Long time no see. How can I help you?"
+        },
+        {
+          "question": "hi, how's your day",
+          "answer": "Hi! My day is going well. How about yours? How can I assist?"
+        },
+        {
+          "question": "hello, what's on your mind",
+          "answer": "Hello! What's on your mind? How can I assist you?"
+        },
+        {
+          "question": "hey, how's everything",
+          "answer": "Hey there! Everything is good. How can I assist you today?"
+        },
+        {
+          "question": "hi, how's your day going",
+          "answer": "Hello! My day is going fine. How can I assist you?"
+        },
+        {
+          "question": "hello, how can I assist you today",
+          "answer": "Hello! I'm here to help. What can I assist you with?"
+        },
+        {
+          "question": "hi, what brings you here",
+          "answer": "Hi! What brings you here today? How can I assist?"
+        },
+        {
+          "question": "hey, what can I do for you",
+          "answer": "Hey there! What can I do for you today?"
+        },
+        {
+          "question": "hi, what's your question",
+          "answer": "Hello! What's your question? How can I assist you?"
+        },
+        {
+          "question": "hello, how can I be of service",
+          "answer": "Hello! I'm here to be of service. How can I assist you?"
+        },
+        {
+          "question": "hi, what's the matter",
+          "answer": "Hi! What's the matter? How can I help?"
+        },
+        {
+          "question": "hello, how can I assist you right now",
+          "answer": "Hello! I'm here to assist you right now. What can I do for you?"
+        },
+        {
+          "question": "hi, what's on the agenda",
+          "answer": "Hello! What's on the agenda for today? How can I assist?"
+        },
+        {
+          "question": "hey, what's your request",
+          "answer": "Hey there! What's your request today? How can I assist?"
+        },
+        {
+          "question": "hi, what's your concern",
+          "answer": "Hi! What's your concern today? How can I help?"
+        },
+        {
+          "question": "hello, how can I support you",
+          "answer": "Hello! I'm here to support you. How can I assist you?"
+        },
+        {
+          "question": "hi, what's your inquiry",
+          "answer": "Hello! What's your inquiry today? How can I assist?"
+        },
+        {
+          "question": "hey, what's your issue",
+          "answer": "Hey there! What's your issue today? How can I help?"
+        },
+        {
+          "question": "hi, what's your problem",
+          "answer": "Hi! What's your problem today? How can I assist?"
+        },
+        {
+          "question": "hello, how can I lend a hand",
+          "answer": "Hello! I'm here to lend a hand. How can I assist you?"
+        },
+        {
+          "question": "hi, how can I provide assistance",
+          "answer": "Hello! I'm here to provide assistance. What can I help you with?"
+        },
+        {
+          "question": "hey, how can I be of help",
+          "answer": "Hey there! How can I be of help today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I be of service today",
+          "answer": "Hello! I'm here to be of service today. How can I assist you?"
+        },
+        {
+          "question": "hello, how can I assist you right now",
+          "answer": "Hello! I'm here to assist you right now. What can I do for you?"
+        },
+        {
+          "question": "hi, how can I be of support",
+          "answer": "Hi! I'm here to be of support. How can I assist?"
+        },
+        {
+          "question": "hey, how can I provide aid",
+          "answer": "Hey there! How can I provide aid today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I give you a hand",
+          "answer": "Hi! How can I give you a hand today? How can I help?"
+        },
+        {
+          "question": "hello, how can I be of use",
+          "answer": "Hello! I'm here to be of use. What can I assist you with?"
+        },
+        {
+          "question": "hi, how can I offer my assistance",
+          "answer": "Hello! I'm here to offer my assistance. How can I assist you?"
+        },
+        {
+          "question": "hey, how can I be of service to you",
+          "answer": "Hey there! How can I be of service to you today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I assist you today, my friend",
+          "answer": "Hello! How can I assist you today, my friend?"
+        },
+        {
+          "question": "hello, how can I be of help to you",
+          "answer": "Hello! How can I be of help to you today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I support your needs",
+          "answer": "Hi! How can I support your needs today? How can I assist?"
+        },
+        {
+          "question": "hey, how can I assist you on this fine day",
+          "answer": "Hey there! How can I assist you on this fine day?"
+        },
+        {
+          "question": "hi, how can I lend a hand to you",
+          "answer": "Hi! How can I lend a hand to you today? How can I help?"
+        },
+        {
+          "question": "hello, how can I be of service to you right now",
+          "answer": "Hello! How can I be of service to you right now?"
+        },
+        {
+          "question": "hi, what can I do for you today",
+          "answer": "Hello! What can I do for you today? How can I assist?"
+        },
+        {
+          "question": "hey, how may I assist you today",
+          "answer": "Hey there! How may I assist you today?"
+        },
+        {
+          "question": "hi, how can I help you achieve your goals",
+          "answer": "Hi! How can I help you achieve your goals today? How can I assist?"
+        },
+        {
+          "question": "hello, how can I make your day better",
+          "answer": "Hello! How can I make your day better today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I make your life easier",
+          "answer": "Hi! How can I make your life easier today? How can I assist?"
+        },
+        {
+          "question": "hey, how can I make things smoother for you",
+          "answer": "Hey there! How can I make things smoother for you today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I simplify things for you",
+          "answer": "Hi! How can I simplify things for you today? How can I assist?"
+        },
+        {
+          "question": "hello, how can I assist you on your journey",
+          "answer": "Hello! How can I assist you on your journey today?"
+        },
+        {
+          "question": "hi, how can I be of service on your path",
+          "answer": "Hi! How can I be of service on your path today? How can I assist?"
+        },
+        {
+          "question": "hey, how can I support your endeavors",
+          "answer": "Hey there! How can I support your endeavors today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I help you reach your destination",
+          "answer": "Hi! How can I help you reach your destination today? How can I assist?"
+        },
+        {
+          "question": "hello, how can I assist you in your quest",
+          "answer": "Hello! How can I assist you in your quest today?"
+        },
+        {
+          "question": "hi, how can I be of aid on your journey",
+          "answer": "Hi! How can I be of aid on your journey today? How can I assist?"
+        },
+        {
+          "question": "hey, how can I be a resource for you",
+          "answer": "Hey there! How can I be a resource for you today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I provide guidance for you",
+          "answer": "Hi! How can I provide guidance for you today? How can I assist?"
+        },
+        {
+          "question": "hello, how can I assist you on your mission",
+          "answer": "Hello! How can I assist you on your mission today?"
+        },
+        {
+          "question": "hi, how can I be a support system for you",
+          "answer": "Hi! How can I be a support system for you today? How can I assist?"
+        },
+        {
+          "question": "hey, how can I be a partner for you",
+          "answer": "Hey there! How can I be a partner for you today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I be a collaborator for you",
+          "answer": "Hi! How can I be a collaborator for you today? How can I assist?"
+        },
+        {
+          "question": "hello, how can I assist you on your adventure",
+          "answer": "Hello! How can I assist you on your adventure today?"
+        },
+        {
+          "question": "hi, how can I be a teammate for you",
+          "answer": "Hi! How can I be a teammate for you today? How can I assist?"
+        },
+        {
+          "question": "hey, how can I be a comrade for you",
+          "answer": "Hey there! How can I be a comrade for you today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I be a helper for you",
+          "answer": "Hi! How can I be a helper for you today? How can I assist?"
+        },
+        {
+          "question": "hello, how can I assist you on your journey",
+          "answer": "Hello! How can I assist you on your journey today?"
+        },
+        {
+          "question": "hi, how can I be a mentor for you",
+          "answer": "Hi! How can I be a mentor for you today? How can I assist?"
+        },
+        {
+          "question": "hey, how can I be a guide for you",
+          "answer": "Hey there! How can I be a guide for you today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I be a counselor for you",
+          "answer": "Hi! How can I be a counselor for you today? How can I assist?"
+        },
+        {
+          "question": "hello, how can I be a coach for you",
+          "answer": "Hello! How can I be a coach for you today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I be a facilitator for you",
+          "answer": "Hi! How can I be a facilitator for you today? How can I assist?"
+        },
+        {
+          "question": "hey, how can I be a problem solver for you",
+          "answer": "Hey there! How can I be a problem solver for you today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I be a listener for you",
+          "answer": "Hi! How can I be a listener for you today? How can I assist?"
+        },
+        {
+          "question": "hello, how can I be a confidant for you",
+          "answer": "Hello! How can I be a confidant for you today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I be a friend for you",
+          "answer": "Hi! How can I be a friend for you today? How can I assist?"
+        },
+        {
+          "question": "hey, how can I be a companion for you",
+          "answer": "Hey there! How can I be a companion for you today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I be a partner in crime for you",
+          "answer": "Hi! How can I be a partner in crime for you today? How can I assist?"
+        },
+        {
+          "question": "hello, how can I be a collaborator for you",
+          "answer": "Hello! How can I be a collaborator for you today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I be a teammate for you",
+          "answer": "Hi! How can I be a teammate for you today? How can I assist?"
+        },
+        {
+          "question": "hey, how can I be a comrade for you",
+          "answer": "Hey there! How can I be a comrade for you today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I be a helper for you",
+          "answer": "Hi! How can I be a helper for you today? How can I assist?"
+        },
+        {
+          "question": "hello, how can I assist you on your journey",
+          "answer": "Hello! How can I assist you on your journey today?"
+        },
+        {
+          "question": "hi, how can I be a mentor for you",
+          "answer": "Hi! How can I be a mentor for you today? How can I assist?"
+        },
+        {
+          "question": "hey, how can I be a guide for you",
+          "answer": "Hey there! How can I be a guide for you today? How can I assist?"
+        },
+        {
+          "question": "hi, how can I be a counselor for you",
+          "answer": "Hi! How can I be a counselor for you today? How can I assist?"
+        },
+        {
+          "question": "hello, how can I be a coach for you",
+          "answer": "Hello! How can I be a coach for you today? How can I assist?"
+        }
+      ]
+}
