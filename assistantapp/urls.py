@@ -19,3 +19,11 @@ path("api/createmodel2", CreateModel2.as_view()),
 path("api/semanticsearch", SemanticSearch.as_view()),
 
 ]
+
+# mkdir filename
+# sudo apt install python3-
+# python3 -m venv myenv
+# source myenv/bin/activate
+# cd filename
+# cd ..
+# sudo python3 manage.py runserver 0.0.0.0:80
