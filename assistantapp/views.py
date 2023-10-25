@@ -61,24 +61,24 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 # Load pre-trained GPT-2 model and tokenizer
 
 
-def gptsummarize(input_text):
-    model_name = "gpt2"  # You can choose different GPT-2 variants like "gpt2", "gpt2-medium", etc.
-    model = GPT2LMHeadModel.from_pretrained(model_name)
-    tokenizer = GPT2Tokenizer.from_pretrained(model_name)
-    input_ids = tokenizer.encode(input_text, return_tensors="pt")
-    max_input_length = len(input_ids[0])
-    max_output_length = max_input_length + 50
-    # Generate text
-    output = model.generate(input_ids, max_length=max_output_length, num_return_sequences=1, do_sample=True, 
-                             # Set to True for sampling-based generation
-    top_p=0.95,  # Adjust if needed
-    pad_token_id=model.config.eos_token_id,)
+# def gptsummarize(input_text):
+#     model_name = "gpt2"  # You can choose different GPT-2 variants like "gpt2", "gpt2-medium", etc.
+#     model = GPT2LMHeadModel.from_pretrained(model_name)
+#     tokenizer = GPT2Tokenizer.from_pretrained(model_name)
+#     input_ids = tokenizer.encode(input_text, return_tensors="pt")
+#     max_input_length = len(input_ids[0])
+#     max_output_length = max_input_length + 50
+#     # Generate text
+#     output = model.generate(input_ids, max_length=max_output_length, num_return_sequences=1, do_sample=True, 
+#                              # Set to True for sampling-based generation
+#     top_p=0.95,  # Adjust if needed
+#     pad_token_id=model.config.eos_token_id,)
 
-    # Decode and print generated text
-    generated_text = tokenizer.decode(output[0], skip_special_tokens=True)
-    print("Generated Text:\n", generated_text)
+#     # Decode and print generated text
+#     generated_text = tokenizer.decode(output[0], skip_special_tokens=True)
+#     print("Generated Text:\n", generated_text)
 
-    return generated_text
+#     return generated_text
 
 
 def T5Summarize(text):
@@ -91,7 +91,7 @@ def T5Summarize(text):
     tokenizedtext=tokenizer.encode(t5inputtext,return_tensors='pt',truncation=True).to(device)
     max_input_length = len(tokenizedtext[0])
     max_output_length = max_input_length + 50
-    summaryids=model.generate(tokenizedtext,min_length=30,max_length=max_output_length)
+    summaryids=model.generate(tokenizedtext,min_length=30,max_length=200)
     summary=tokenizer.decode(summaryids[0],skip_special_tokens=True)
 
 
@@ -250,14 +250,15 @@ def htmlparser(url,title):
             # Calculate cosine similarity between the question and sentences
             cosine_similarities = cosine_similarity(question_vector, sentence_vectors)
             # Get the indices of the most similar sentences
-            top_n = 5  # You can adjust this value
+            top_n = 4  # You can adjust this value
             similar_sentence_indices = cosine_similarities.argsort()[0][-top_n:][::-1]
             # Retrieve the most similar sentences
             similar_sentences = [sentences[i] for i in similar_sentence_indices]
             # Print the similar sentences
             for i, sentence in enumerate(similar_sentences):
                 text=sentence.replace("\n"," ").encode(sys.stdout.encoding, 'replace').decode(sys.stdout.encoding)
-                print(f"Similar Sentence {i + 1}: {text}")
+                if len(text.split())<150:
+                    print(f"Similar Sentence-------------- {i + 1}: {text}")
                 text_content.append(text)
             combined_text = "".join(text_content)
             return combined_text
@@ -382,8 +383,8 @@ class SemanticSearch(APIView):
                                 qtext=res2['fulltext']
                                 # summary = Summary()
                                 # result = summary(fulltext)
-                                fulltext=qtext
-                                # fulltext=T5Summarize(qtext)
+                                # fulltext=qtext
+                                fulltext=T5Summarize(qtext)
                                 context={
                                         "status":True,
                                         "question":query,
@@ -419,8 +420,8 @@ class SemanticSearch(APIView):
                         qtext=res2['fulltext']
                         # summary = Summary()
                         # result = summary(fulltext)
-                        fulltext=qtext
-                        # fulltext=T5Summarize(qtext)
+                        # fulltext=qtext
+                        fulltext=T5Summarize(qtext)
                         context={
                                 "status":True,
                                 "question":query,
