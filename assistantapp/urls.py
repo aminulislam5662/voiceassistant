@@ -17,6 +17,7 @@ path("api/search/duck", Duckduckgo.as_view()),
 path("api/createmodel", CreateModel.as_view()),
 path("api/createmodel2", CreateModel2.as_view()),
 path("api/semanticsearch", SemanticSearch.as_view()),
+path("api/summary", SummaryApi.as_view()),
 
 ]
 
@@ -27,5 +28,7 @@ path("api/semanticsearch", SemanticSearch.as_view()),
 # cd filename
 # cd ..
 # sudo python3 manage.py runserver 0.0.0.0:80
-# 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
+# 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
 #tmux kill-session
+# git pull https://github.com/aminulislam5662/voiceassistant.git
+# sudo kill -9 $(sudo lsof -t -i:80)

@@ -18,7 +18,7 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import quote
 import sys
-
+from assistantapp import summarize
 # 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
 
 from txtai.embeddings import Embeddings
@@ -29,15 +29,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 import sys
-# from txtai.pipeline import Summary, Textractor
-# import torch
-# from transformers import T5Tokenizer,T5ForConditionalGeneration,T5Config
+from txtai.pipeline import Summary, Textractor
 
-# model = T5ForConditionalGeneration.from_pretrained('t5-small')
-# tokenizer= T5Tokenizer.from_pretrained('t5-small',legacy=False)
-# device=torch.device('cpu')
-# Create your views here.
 import joblib
+
 
 
 def findcategory(text):
@@ -60,6 +55,14 @@ def findcategory(text):
 
 # Load pre-trained GPT-2 model and tokenizer
 
+class SummaryApi(APIView):
+    def post(self,request,):
+        query= request.data['query']
+        result = summarize.generate_summary(query,num_sentences=4)
+        context={
+            "result":result
+        }
+        return Response(context)
 
 # def gptsummarize(input_text):
 #     model_name = "gpt2"  # You can choose different GPT-2 variants like "gpt2", "gpt2-medium", etc.
@@ -69,9 +72,9 @@ def findcategory(text):
 #     max_input_length = len(input_ids[0])
 #     max_output_length = max_input_length + 50
 #     # Generate text
-#     output = model.generate(input_ids, max_length=max_output_length, num_return_sequences=1, do_sample=True, 
+#     output = model.generate(input_ids, max_length=300, do_sample=True, 
 #                              # Set to True for sampling-based generation
-#     top_p=0.95,  # Adjust if needed
+#     top_p=0.50,  # Adjust if needed
 #     pad_token_id=model.config.eos_token_id,)
 
 #     # Decode and print generated text
@@ -261,6 +264,7 @@ def htmlparser(url,title):
                     print(f"Similar Sentence-------------- {i + 1}: {text}")
                 text_content.append(text)
             combined_text = "".join(text_content)
+            combined_text=summarize.generate_summary(combined_text,num_sentences=10)
             return combined_text
         else:
             print("no sentences found.")
@@ -371,11 +375,13 @@ class SemanticSearch(APIView):
                     if iqres:
                         for iq in iqres:
                             # print(iqdata[iq[0]]['answer'])
-                            if iq[1]> .70:
+                            if iq[1]> .80:
+                                response= duckducksearch(query)
                                 context={
                                         "status":True,
                                         "question":query,
-                                        "answer":iqdata[iq[0]]['answer']
+                                        "answer":iqdata[iq[0]]['answer'],
+                                        "url":response['url']
                                     }
                             else:
                                 res2= Initializesearch(query)
@@ -389,6 +395,7 @@ class SemanticSearch(APIView):
                                         "status":True,
                                         "question":query,
                                         "answer":fulltext,
+                                        "url":res2['url']
                                        
                                     }
 
@@ -426,6 +433,7 @@ class SemanticSearch(APIView):
                                 "status":True,
                                 "question":query,
                                 "answer":fulltext,
+                                "url":res2['url']
                                 
                             }
 
