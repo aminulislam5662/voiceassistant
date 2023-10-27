@@ -27,3 +27,5 @@ path("api/semanticsearch", SemanticSearch.as_view()),
 # cd filename
 # cd ..
 # sudo python3 manage.py runserver 0.0.0.0:80
+# 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
+#tmux kill-session

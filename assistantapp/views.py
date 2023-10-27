@@ -29,13 +29,13 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 import sys
-from txtai.pipeline import Summary, Textractor
-import torch
-from transformers import T5Tokenizer,T5ForConditionalGeneration,T5Config
+# from txtai.pipeline import Summary, Textractor
+# import torch
+# from transformers import T5Tokenizer,T5ForConditionalGeneration,T5Config
 
-model = T5ForConditionalGeneration.from_pretrained('t5-small')
-tokenizer= T5Tokenizer.from_pretrained('t5-small',legacy=False)
-device=torch.device('cpu')
+# model = T5ForConditionalGeneration.from_pretrained('t5-small')
+# tokenizer= T5Tokenizer.from_pretrained('t5-small',legacy=False)
+# device=torch.device('cpu')
 # Create your views here.
 import joblib
 
@@ -56,7 +56,7 @@ def findcategory(text):
     return predicted_category[0]
 
 
-from transformers import GPT2LMHeadModel, GPT2Tokenizer
+# from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
 # Load pre-trained GPT-2 model and tokenizer
 
@@ -81,22 +81,22 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 #     return generated_text
 
 
-def T5Summarize(text):
-    preprocessed_text=text.strip().replace('\n','')
+# def T5Summarize(text):
+#     preprocessed_text=text.strip().replace('\n','')
 
-    t5inputtext=preprocessed_text
+#     t5inputtext=preprocessed_text
 
-    print(len(t5inputtext.split()))
+#     print(len(t5inputtext.split()))
 
-    tokenizedtext=tokenizer.encode(t5inputtext,return_tensors='pt',truncation=True).to(device)
-    max_input_length = len(tokenizedtext[0])
-    max_output_length = max_input_length + 50
-    summaryids=model.generate(tokenizedtext,min_length=30,max_length=200)
-    summary=tokenizer.decode(summaryids[0],skip_special_tokens=True)
+#     tokenizedtext=tokenizer.encode(t5inputtext,return_tensors='pt',truncation=True).to(device)
+#     max_input_length = len(tokenizedtext[0])
+#     max_output_length = max_input_length + 50
+#     summaryids=model.generate(tokenizedtext,min_length=30,max_length=200)
+#     summary=tokenizer.decode(summaryids[0],skip_special_tokens=True)
 
 
-    print(f"t5 summary--{summary}")
-    return summary
+#     print(f"t5 summary--{summary}")
+#     return summary
 
 
 
@@ -383,8 +383,8 @@ class SemanticSearch(APIView):
                                 qtext=res2['fulltext']
                                 # summary = Summary()
                                 # result = summary(fulltext)
-                                # fulltext=qtext
-                                fulltext=T5Summarize(qtext)
+                                fulltext=qtext
+                                # fulltext=T5Summarize(qtext)
                                 context={
                                         "status":True,
                                         "question":query,
@@ -420,8 +420,8 @@ class SemanticSearch(APIView):
                         qtext=res2['fulltext']
                         # summary = Summary()
                         # result = summary(fulltext)
-                        # fulltext=qtext
-                        fulltext=T5Summarize(qtext)
+                        fulltext=qtext
+                        # fulltext=T5Summarize(qtext)
                         context={
                                 "status":True,
                                 "question":query,
